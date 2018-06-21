@@ -17,6 +17,6 @@ server:
 
 logging:
   level:
-    org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: debug
+    org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: ERROR
 
 

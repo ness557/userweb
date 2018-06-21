@@ -19,7 +19,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Controller
-@RequestMapping("/users")
 public class UserWebController {
 
     private UserService userService;

@@ -17,7 +17,7 @@ import java.util.Set;
 @Entity
 @Table(name = "roles")
 @XmlRootElement
-@Getter @Setter @NoArgsConstructor @ToString //@EqualsAndHashCode
+@Getter @Setter @NoArgsConstructor //@EqualsAndHashCode
 public class Role implements Serializable {
 
     @Id
@@ -36,5 +36,13 @@ public class Role implements Serializable {
     @XmlTransient
     public Set<User> getUsers() {
         return users;
+    }
+
+    @Override
+    public String toString() {
+        return "Role{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
